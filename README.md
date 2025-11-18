@@ -8,7 +8,6 @@ Repository files:
 - [data.txt](data.txt) — Dataset of sentences used in the task.
 - [requirements.txt](requirements.txt) — Python packages used by the task.
 - [environment.yml](environment.yml) — Conda environment recipe (name: `embeds`) that installs the requirements.
-- [LICENSE](LICENSE) — License for the task.
 - [.gitignore](.gitignore) — Files ignored by git.
 - [README.md](README.md) — This file.
 
