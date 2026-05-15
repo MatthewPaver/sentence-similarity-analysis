@@ -29,6 +29,24 @@ The point of the project is not just to produce a ranking, but to show what embe
 - notebook-based inspection of the top matches
 - discussion of semantic similarity versus factual accuracy
 
+## Expected Result
+
+Target sentence:
+
+```text
+A polar bear's fur is actually transparent, and not white (as is commonly believed).
+```
+
+Representative top matches from the notebook:
+
+| Rank | Sentence | Score |
+|:---:|:---|---:|
+| 1 | The fur of a polar bear is transparent, not white. | 0.9337 |
+| 2 | Polar bears are renowned for their white fur. | 0.7957 |
+| 3 | A polar bear's skin is black underneath its fur. | 0.6820 |
+
+This is the core lesson of the demo: embedding similarity is good at finding related text, but it does not guarantee factual agreement.
+
 ## Quick Start
 
 ### Option 1: `venv`
