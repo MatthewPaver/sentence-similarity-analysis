@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="360" viewBox="0 0 1200 360" role="img" aria-labelledby="title desc">
+  <title id="title">Sentence similarity architecture</title>
+  <desc id="desc">A text corpus is embedded with a sentence-transformer model, ranked with cosine similarity, and inspected in a notebook.</desc>
+  <rect width="1200" height="360" fill="#fbfaf7"/>
+  <text x="54" y="58" font-family="Avenir Next, Segoe UI, Arial, sans-serif" font-size="28" font-weight="800" fill="#151515">Architecture at a glance</text>
+  <text x="54" y="88" font-family="Avenir Next, Segoe UI, Arial, sans-serif" font-size="17" font-weight="650" fill="#57534e">A compact retrieval demo that separates semantic relatedness from factual agreement.</text>
+  <g font-family="Avenir Next, Segoe UI, Arial, sans-serif" font-weight="800">
+    <rect x="54" y="144" width="190" height="96" fill="#ffffff" stroke="#151515" stroke-width="2"/>
+    <text x="91" y="186" font-size="20" fill="#151515">Corpus</text>
+    <text x="91" y="214" font-size="14" fill="#57534e">101 sentences</text>
+    <rect x="308" y="144" width="190" height="96" fill="#f4f0e9" stroke="#151515" stroke-width="2"/>
+    <text x="347" y="186" font-size="20" fill="#151515">Encoder</text>
+    <text x="347" y="214" font-size="14" fill="#57534e">sentence-transformers</text>
+    <rect x="562" y="144" width="190" height="96" fill="#0f766e"/>
+    <text x="601" y="186" font-size="20" fill="#ffffff">Ranking</text>
+    <text x="601" y="214" font-size="14" fill="#d7f6f0">cosine similarity</text>
+    <rect x="816" y="144" width="190" height="96" fill="#151515"/>
+    <text x="857" y="186" font-size="20" fill="#ffffff">Notebook</text>
+    <text x="857" y="214" font-size="14" fill="#d8d2c8">inspect caveats</text>
+  </g>
+  <g stroke="#0f766e" stroke-width="4" fill="none">
+    <path d="M244 192h64"/>
+    <path d="M498 192h64"/>
+    <path d="M752 192h64"/>
+  </g>
+</svg>

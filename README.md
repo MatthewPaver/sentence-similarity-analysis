@@ -7,6 +7,7 @@
 ![Transformers](https://img.shields.io/badge/Transformers-FFD21E?style=flat-square&logo=huggingface&logoColor=000000)
 ![Jupyter](https://img.shields.io/badge/Jupyter-F37626?style=flat-square&logo=jupyter&logoColor=white)
 ![License](https://img.shields.io/badge/License-MIT-blue?style=flat-square)
+[![Validate](https://github.com/MatthewPaver/sentence-similarity-analysis/actions/workflows/validate.yml/badge.svg)](https://github.com/MatthewPaver/sentence-similarity-analysis/actions/workflows/validate.yml)
 
 **Semantic similarity demo using sentence-transformer embeddings**
 
@@ -53,6 +54,8 @@ The point of the project is not just to produce a ranking, but to show what embe
 - **Known limit:** this is a focused notebook demo, not a packaged retrieval API.
 
 ## What It Covers
+
+![Sentence similarity architecture](docs/assets/architecture.svg)
 
 - sentence embeddings with `sentence-transformers`
 - cosine similarity for ranking related text
