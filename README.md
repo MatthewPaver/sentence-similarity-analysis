@@ -21,10 +21,10 @@
 | Section | Where to look |
 |:---|:---|
 | What it solves | Shows what sentence embeddings are useful for, and where similarity can mislead |
-| Quick start | [Quick Start](#quick-start) |
+| Quick start | `make notebook` or [Quick Start](#quick-start) |
 | Screenshot | [Portfolio Store](https://matthewpaver.github.io/MatthewPaver/store/) |
 | Architecture | [What It Covers](#what-it-covers) |
-| Tests | Run `response.ipynb` and compare [Expected Result](#expected-result) |
+| Tests | `make check-data`, then run `response.ipynb` and compare [Expected Result](#expected-result) |
 | Tech stack | `Python` `Jupyter` `sentence-transformers` `PyTorch` |
 
 ## Overview
@@ -32,6 +32,18 @@
 This repo is a compact NLP experiment rather than a packaged application. It uses transformer-based sentence embeddings and cosine similarity to rank a corpus of 101 factual statements against a target sentence about polar bear fur.
 
 The point of the project is not just to produce a ranking, but to show what embedding-based similarity does well and where it can mislead. In particular, semantically similar text is not the same thing as factually correct text.
+
+## Reviewer Pack
+
+| Area | Details |
+|:---|:---|
+| What it solves | Demonstrates where embedding similarity helps retrieval and where it can confuse relatedness with truth. |
+| Screenshot | [Portfolio Store preview](https://matthewpaver.github.io/MatthewPaver/store/preview.html?app=sentence) |
+| Run locally | `make notebook` opens the notebook with the expected kernel installed. |
+| Tests | `make check-data`; notebook output should match the [Expected Result](#expected-result) shape. |
+| Demo data | Included in `data.txt` with 101 candidate sentences. |
+| Architecture | Text corpus -> sentence-transformer embeddings -> cosine ranking -> notebook interpretation |
+| Limitations | Focused concept demo; not a packaged retrieval API or fact-checking system. |
 
 ## Reviewer Notes
 
