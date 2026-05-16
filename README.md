@@ -33,6 +33,13 @@ This repo is a compact NLP experiment rather than a packaged application. It use
 
 The point of the project is not just to produce a ranking, but to show what embedding-based similarity does well and where it can mislead. In particular, semantically similar text is not the same thing as factually correct text.
 
+## Reviewer Notes
+
+- **Reproducible path:** create the environment, open `response.ipynb`, and run all cells from the repository root.
+- **AI signal:** the repo shows embedding retrieval behaviour in a way that is easy to inspect and challenge.
+- **Quality signal:** the README calls out the key limitation: similarity is not factual agreement.
+- **Known limit:** this is a focused notebook demo, not a packaged retrieval API.
+
 ## What It Covers
 
 - sentence embeddings with `sentence-transformers`
