@@ -3,7 +3,7 @@ VENV ?= .venv
 PYTHON_BIN := $(VENV)/bin/python
 PIP_BIN := $(PYTHON_BIN) -m pip
 
-.PHONY: venv install check-data notebook
+.PHONY: venv install check-data critic test notebook
 
 venv:
 	$(PYTHON) -m venv $(VENV)
@@ -16,6 +16,12 @@ install: venv
 check-data:
 	test -s data.txt
 	test -s response.ipynb
+
+critic:
+	$(PYTHON_BIN) retrieval_critic.py "polar bear fur"
+
+test: check-data
+	$(PYTHON) -m pytest tests -q
 
 notebook: install
 	$(PYTHON_BIN) -m jupyter lab response.ipynb

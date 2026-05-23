@@ -51,6 +51,7 @@ The point of the project is not just to produce a ranking, but to show what embe
 - **Reproducible path:** create the environment, open `response.ipynb`, and run all cells from the repository root.
 - **AI signal:** the repo shows embedding retrieval behaviour in a way that is easy to inspect and challenge.
 - **Quality signal:** the README calls out the key limitation: similarity is not factual agreement.
+- **Agent signal:** `retrieval_critic.py` adds a small retrieval critic that warns when a top match is weak or when similarity should not be treated as truth.
 - **Known limit:** this is a focused notebook demo, not a packaged retrieval API.
 
 ## What It Covers
