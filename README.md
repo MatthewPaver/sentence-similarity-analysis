@@ -46,6 +46,20 @@ The point of the project is not just to produce a ranking, but to show what embe
 | Architecture | Text corpus -> sentence-transformer embeddings -> cosine ranking -> notebook interpretation |
 | Limitations | Focused concept demo; not a packaged retrieval API or fact-checking system. |
 
+## Practical Test
+
+Can embeddings find related text while making it clear that related does not mean true?
+
+The useful check is the full path:
+
+1. Load a target sentence and candidate facts.
+2. Embed each sentence.
+3. Rank candidates with cosine similarity.
+4. Inspect the top matches.
+5. Use the retrieval critic to flag weak matches and remind the reader that similarity is evidence, not proof.
+
+That is the point of the repo: show where embedding retrieval helps and where it can mislead.
+
 ## Reviewer Notes
 
 - **Reproducible path:** create the environment, open `response.ipynb`, and run all cells from the repository root.
