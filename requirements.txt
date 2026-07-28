@@ -1,5 +1,8 @@
 transformers==4.57.1
 sentence-transformers==5.1.2
+torch==2.8.0
+numpy==1.26.4
 ipykernel==6.29.5
+jupyterlab==4.4.9
 pandas==2.2.3
 pytest==8.4.2

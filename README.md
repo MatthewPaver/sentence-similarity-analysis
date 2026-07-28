@@ -58,6 +58,11 @@ The useful check is the full path:
 4. Inspect the top matches.
 5. Use the retrieval critic to flag weak matches and remind the reader that similarity is evidence, not proof.
 
+`embedding_pipeline.py` packages that same ranking path as a small testable
+function. Its smoke test uses deterministic local vectors, so CI validates the
+ranking logic without downloading a model; running the notebook exercises the
+declared `all-mpnet-base-v2` model end to end.
+
 That is the point of the repo: show where embedding retrieval helps and where it can mislead.
 
 ## Reviewer Notes
@@ -123,6 +128,8 @@ jupyter lab
 
 ```text
 response.ipynb     Main notebook with the analysis
+embedding_pipeline.py
+                   Testable sentence-transformer ranking path
 data.txt           Corpus of 101 candidate sentences
 requirements.txt   Pip dependencies
 environment.yml    Conda environment
