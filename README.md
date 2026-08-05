@@ -28,6 +28,19 @@
 | Tests | `make check-data`, then run `response.ipynb` and compare [Expected Result](#expected-result) |
 | Tech stack | `Python` `Jupyter` `sentence-transformers` `PyTorch` |
 
+
+## Where this pattern shows up in real work
+
+Embedding similarity is a retrieval helper, not a truth oracle. Realistic uses:
+
+| Scenario | Why embeddings help | What still needs a human / source check |
+| --- | --- | --- |
+| **Support FAQ match** | Rank help articles against a customer question | Top hit can be fluent and still wrong — cite the article |
+| **Duplicate ticket / question hints** | Surface near-duplicates before creating another case | Similarity ≠ same root cause |
+| **RAG candidate retrieval** | Shortlist passages before an LLM answers | Without citations + evals, you get confident nonsense |
+
+This notebook’s polar-bear ranking is the teaching toy. The portfolio point is the caveat: **similarity ranks meaning; it does not verify facts.** That is the same discipline you want before trusting a ProjectLens “precedent” answer from RAG.
+
 ## Overview
 
 This repo is a compact NLP experiment rather than a packaged application. It uses transformer-based sentence embeddings and cosine similarity to rank a corpus of 101 factual statements against a target sentence about polar bear fur.
